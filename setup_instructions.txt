@@ -1,0 +1,44 @@
+# Quick Setup Instructions for Your Laptop
+
+## Step 1: Install Python
+- Download Python 3.11+ from https://python.org/downloads/
+- Make sure to check "Add Python to PATH" during installation
+
+## Step 2: Download the Project
+- Download all project files to a folder on your laptop
+- Keep the folder structure exactly as shown
+
+## Step 3: Install Dependencies
+Open command prompt/terminal in the project folder and run:
+
+pip install streamlit pandas requests beautifulsoup4 trafilatura email-validator dnspython openpyxl
+
+## Step 4: Run the Application
+In the same command prompt/terminal, run:
+
+streamlit run app.py
+
+## Step 5: Access the Platform
+- Your browser will automatically open to http://localhost:8501
+- If not, manually go to that address in your browser
+
+## Folder Structure You Need:
+b2b-lead-generation-platform/
+├── app.py
+├── pages/
+│   ├── 1_Tech_Stack_Finder.py
+│   ├── 2_Email_Extractor.py
+│   ├── 3_Lead_Enrichment.py
+│   └── 4_Export_Leads.py
+├── utils/
+│   ├── data_processor.py
+│   ├── email_extractor.py
+│   ├── lead_enrichment.py
+│   └── tech_stack_finder.py
+└── .streamlit/
+    └── config.toml
+
+## Troubleshooting:
+- If you get "module not found" errors, run the pip install command again
+- If port 8501 is busy, Streamlit will use the next available port
+- Make sure all files are in the correct folders as shown above
